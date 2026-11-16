@@ -1,0 +1,19 @@
+{
+  "name": "lspd-web-portal",
+  "version": "1.0.0",
+  "description": "Los Santos Police Department Official Web Portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "lspd",
+    "police",
+    "los-santos"
+  ],
+  "author": "LSPD Command Division",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

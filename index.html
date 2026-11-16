@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oficiální portál Los Santos Police Department (LSPD). Hlavní stanice Little Seoul, Trestní státní zákoník, Federální zákoník a vedení sboru." />
+  <title>LSPD | Los Santos Police Department</title>
+
+  <!-- Google Fonts: Montserrat & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+  <!-- ================= AUTHENTIC LAPD STYLE NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <!-- Left: Logo & Brand -->
+      <a href="#top" class="brand-logo" aria-label="LSPD Domů">
+        <div class="badge-icon-wrapper">
+          <img src="lspd_logo.png" alt="LSPD Logo" class="police-logo-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">LSPD</span>
+          <span class="brand-subtitle">JOINLSPD.COM</span>
+        </div>
+      </a>
+
+      <!-- Center: Clean Navigation Menu (LAPD Style) -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-item active">DOMŮ</a>
+        <a href="#legislation" class="nav-item">ZÁKONY & LEGISLATIVA</a>
+        <a href="#high-command" class="nav-item">VEDENÍ SBORU</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcNDCBLHxIllWC0Msst7ZGjhjYj9lNAESX-XQOZFcXp7wEcQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="nav-item nav-complaint-link">PODAT STÍŽNOST</a>
+      </nav>
+
+      <!-- Right: Search Pill Input (Matching Screenshot) -->
+      <div class="nav-actions-right">
+        <div class="nav-search-pill">
+          <input type="text" id="siteSearchInput" placeholder="Search LSPD site" aria-label="Vyhledat na webu" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Otevřít menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION (EXACT LAPD HERO IMAGE & TYPOGRAPHY) ================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay-gradient"></div>
+
+    <div class="container hero-container">
+      <!-- Yellow / Gold Kicker (Exactly like screenshot) -->
+      <div class="hero-kicker">
+        YOUR BADGE STARTS HERE
+      </div>
+
+      <!-- Big Bold White Headline (Exactly like screenshot) -->
+      <h1 class="hero-main-title">
+        - LSPD IS HIRING -
+      </h1>
+
+      <p class="hero-motto-tag">
+        LOS SANTOS POLICE DEPARTMENT • TO PROTECT AND TO SERVE
+      </p>
+
+      <p class="hero-description">
+        Oficiální portál policejního sboru města Los Santos. Věrně střežíme bezpečnost našich ulic, 
+        prosazujeme spravedlnost a poskytujeme profesionální ochranu občanům i návštěvníkům metropole.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcNDCBLHxIllWC0Msst7ZGjhjYj9lNAESX-XQOZFcXp7wEcQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+          <i class="fa-solid fa-file-signature"></i>
+          <span>Podat stížnost (Google Forms)</span>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 11px; margin-left: 4px;"></i>
+        </a>
+        <a href="#legislation" class="btn btn-glass">
+          <i class="fa-solid fa-book-scale"></i>
+          <span>Zákony & Legislativa</span>
+        </a>
+        <a href="#high-command" class="btn btn-outline">
+          <i class="fa-solid fa-id-card-clip"></i>
+          <span>Vedení sboru</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLUE ACCENT RIBBON (MATCHING LAPD WEBSITE) ================= -->
+  <div class="lapd-accent-ribbon">
+    <div class="container ribbon-inner">
+      <div class="ribbon-item">
+        <i class="fa-solid fa-building-shield"></i>
+        <span>HLAVNÍ VELITELSTVÍ: <strong>LITTLE SEOUL POLICE STATION</strong></span>
+      </div>
+      <div class="ribbon-item">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <span>PLATNÁ LEGISLATIVA: <strong>TRESTNÍ STÁTNÍ ZÁKONÍK & FEDERÁLNÍ KODEX</strong></span>
+      </div>
+      <div class="ribbon-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>STAV HLÍDEK: <strong>10-8 VŠECHNY DIVIZE AKTIVNÍ</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LAW & LEGISLATION SECTION (2 CODES) ================= -->
+  <section class="section legislation-section" id="legislation">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-scale-balanced"></i> LEGISLATIVNÍ RÁMEC
+        </div>
+        <h2 class="section-title">Zákony & Legislativa</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-book"></i><span></span></div>
+        <p class="section-subtitle">
+          Přímý přístup k oficiálním právním kodexům. Závazné trestní právo státu a federální předpisy Los Santos Police Department.
+        </p>
+      </div>
+
+      <!-- Laws Directory Grid: Exactly 2 Codes -->
+      <div class="law-grid two-cards-grid" id="lawGrid">
+
+        <!-- 1. TRESTNÍ STÁTNÍ ZÁKONÍK (CALIFORNIA PENAL CODE) -->
+        <article class="law-card">
+          <div class="law-card-header">
+            <div class="law-icon-badge blue">
+              <i class="fa-solid fa-gavel"></i>
+            </div>
+            <div class="law-meta">
+              <span class="law-badge-type">Státní trestní řád</span>
+              <span class="law-authority">State of California / San Andreas</span>
+            </div>
+          </div>
+          <div class="law-card-body">
+            <h3 class="law-title">Trestní státní zákoník (California Penal Code)</h3>
+            <p class="law-desc">
+              Oficiální trestní kodex státu. Obsahuje definici přestupků, přečinů a těžkých zločinů, včetně trestních sazeb a procesních postupů.
+            </p>
+          </div>
+          <div class="law-card-footer">
+            <div class="law-status">
+              <span class="status-indicator active"></span>
+              Státní legislativa
+            </div>
+            <div class="law-btn-group">
+              <button class="btn-copy-link" data-url="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN" title="Kopírovat odkaz">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN" target="_blank" rel="noopener noreferrer" class="btn-law-action">
+                <span>Otevřít dokument</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. FEDERÁLNÍ TRESTNÍ ZÁKONÍK (WITHOUT DESCRIPTION AS REQUESTED) -->
+        <article class="law-card featured-law">
+          <div class="featured-ribbon">
+            <i class="fa-solid fa-star"></i> FEDERÁLNÍ PŘEDPIS
+          </div>
+          <div class="law-card-header">
+            <div class="law-icon-badge gold-special">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            <div class="law-meta">
+              <span class="law-badge-type highlight">Federální legislativa</span>
+              <span class="law-authority">Department of Justice / LSPD</span>
+            </div>
+          </div>
+          <div class="law-card-body">
+            <h3 class="law-title">Federální zákoník (Federal Penal Code)</h3>
+          </div>
+          <div class="law-card-footer">
+            <div class="law-status">
+              <span class="status-indicator live"></span>
+              Online Cloud Dokument
+            </div>
+            <div class="law-btn-group">
+              <button class="btn-copy-link" data-url="https://onedrive.live.com/:w:/g/personal/548C6C1452612027/IQApjAG7heNmT5pThr2XcgrWAW8kDaYAFp9yNpXZVXPkwJc?resid=548C6C1452612027!sbb018c29e3854f669a5386bd97720ad6&ithint=file%2Cdocx&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy81NDhjNmMxNDUyNjEyMDI3L0lRQXBqQUc3aGVObVQ1cFRocjJYY2dyV0FXOGtEYVlBRnA5eU5wWFpWWFBrd0pj" title="Kopírovat odkaz">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+              <a href="https://onedrive.live.com/:w:/g/personal/548C6C1452612027/IQApjAG7heNmT5pThr2XcgrWAW8kDaYAFp9yNpXZVXPkwJc?resid=548C6C1452612027!sbb018c29e3854f669a5386bd97720ad6&ithint=file%2Cdocx&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy81NDhjNmMxNDUyNjEyMDI3L0lRQXBqQUc3aGVObVQ1cFRocjJYY2dyV0FXOGtEYVlBRnA5eU5wWFpWWFBrd0pj" target="_blank" rel="noopener noreferrer" class="btn-law-action btn-gold-action">
+                <span>Otevřít dokument</span>
+                <i class="fa-solid fa-file-word"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Legal Disclaimer Note -->
+      <div class="law-notice">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span>Upozornění pro občany: Neznalost zákona neomlouvá. Všechny hlídky LSPD se řídí výše uvedenými dokumenty.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HIGH COMMAND & COMMAND STAFF (FROM USER ROSTER) ================= -->
+  <section class="section high-command-section" id="high-command">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-shield-halved"></i> OFICIÁLNÍ ROSTER
+        </div>
+        <h2 class="section-title">Vedení sboru • High Command & Command Staff</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-star"></i><span></span></div>
+        <p class="section-subtitle">
+          Aktuální přehled vedení Los Santos Police Department dle personální tabulky sboru.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="rank-hierarchy-pills">
+        <span class="pill-title"><i class="fa-solid fa-filter"></i> Zobrazit:</span>
+        <button class="pill active" data-filter="all">Všichni</button>
+        <button class="pill" data-filter="High Command">High Command Staff</button>
+        <button class="pill" data-filter="Command Staff">Command Staff</button>
+      </div>
+
+      <!-- Official Tabular Roster (Styled exactly like the uploaded image) -->
+      <div class="roster-tables-container">
+
+        <!-- 1. HIGH COMMAND STAFF TABLE -->
+        <div class="roster-table-block" data-category="High Command">
+          <div class="roster-table-heading high-cmd">
+            <h3><i class="fa-solid fa-star"></i> High Command Staff</h3>
+          </div>
+          <div class="table-responsive">
+            <table class="lapd-roster-table">
+              <thead>
+                <tr>
+                  <th>Číslo odznaku</th>
+                  <th>Volací znak</th>
+                  <th>Jméno & Příjmení</th>
+                  <th>Hodnost</th>
+                  <th>Stanice</th>
+                  <th>Discord</th>
+                  <th>Insignie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge-num-pill">1001</span></td>
+                  <td><strong class="callsign-cell">Staff-1</strong></td>
+                  <td><span class="officer-name-cell">Jack Johnson</span></td>
+                  <td><span class="rank-title-cell high">Chief Of Police</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="_zoney_" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> _zoney_
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-stars">★★★★</span></td>
+                </tr>
+                <tr>
+                  <td><span class="badge-num-pill">1002</span></td>
+                  <td><strong class="callsign-cell">Staff-2</strong></td>
+                  <td><span class="officer-name-cell">Frank Callahan</span></td>
+                  <td><span class="rank-title-cell high">Assistant Chief Of Police</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="xerisek" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> xerisek
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-stars">★★★</span></td>
+                </tr>
+                <tr>
+                  <td><span class="badge-num-pill">1003</span></td>
+                  <td><strong class="callsign-cell">Staff-3</strong></td>
+                  <td><span class="officer-name-cell">Marcus Stanley</span></td>
+                  <td><span class="rank-title-cell high">Deputy Chief Of Police</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="cernypaannn" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> cernypaannn
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-stars">★★</span></td>
+                </tr>
+                <tr>
+                  <td><span class="badge-num-pill">1006</span></td>
+                  <td><strong class="callsign-cell">Mike-1</strong></td>
+                  <td><span class="officer-name-cell">Leon Viper</span></td>
+                  <td><span class="rank-title-cell">Commander</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="zyxyk1" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> zyxyk1
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-stars">★</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 2. COMMAND STAFF TABLE -->
+        <div class="roster-table-block" data-category="Command Staff" style="margin-top: 36px;">
+          <div class="roster-table-heading cmd-staff">
+            <h3><i class="fa-solid fa-users"></i> Command Staff</h3>
+          </div>
+          <div class="table-responsive">
+            <table class="lapd-roster-table">
+              <thead>
+                <tr>
+                  <th>Číslo odznaku</th>
+                  <th>Volací znak</th>
+                  <th>Jméno & Příjmení</th>
+                  <th>Hodnost</th>
+                  <th>Stanice</th>
+                  <th>Discord</th>
+                  <th>Insignie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="vacant-row">
+                  <td><span class="badge-num-pill">1007</span></td>
+                  <td><strong class="callsign-cell">Nora-1</strong></td>
+                  <td><span class="vacant-text"><i class="fa-solid fa-user-clock"></i> Neobsazeno / Volné místo</span></td>
+                  <td><span class="rank-title-cell">Captain</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td><span class="dash-text">—</span></td>
+                  <td><span class="insignia-bars" title="Captain Bars">❚❚</span></td>
+                </tr>
+                <tr>
+                  <td><span class="badge-num-pill">1008</span></td>
+                  <td><strong class="callsign-cell">Nora-2</strong></td>
+                  <td><span class="officer-name-cell">Oliver Torres</span></td>
+                  <td><span class="rank-title-cell">Captain</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="Kylenkoo076" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> Kylenkoo076
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-bars" title="Captain Bars">❚❚</span></td>
+                </tr>
+                <tr>
+                  <td><span class="badge-num-pill">1009</span></td>
+                  <td><strong class="callsign-cell">Nora-3</strong></td>
+                  <td><span class="officer-name-cell">Alex Sanchez</span></td>
+                  <td><span class="rank-title-cell">Captain</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="masterofbitcoin" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> masterofbitcoin
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-bars" title="Captain Bars">❚❚</span></td>
+                </tr>
+                <tr>
+                  <td><span class="badge-num-pill">1010</span></td>
+                  <td><strong class="callsign-cell">Nora-4</strong></td>
+                  <td><span class="officer-name-cell">Ann-Katherim Mercedes</span></td>
+                  <td><span class="rank-title-cell">Captain</span></td>
+                  <td><span class="station-cell"><i class="fa-solid fa-building-shield"></i> Little Seoul HQ</span></td>
+                  <td>
+                    <button class="discord-tag-pill" data-discord="daniiikkk" title="Klikněte pro zkopírování Discord nicku">
+                      <i class="fa-brands fa-discord"></i> daniiikkk
+                      <i class="fa-regular fa-copy copy-icon"></i>
+                    </button>
+                  </td>
+                  <td><span class="insignia-bars" title="Captain Bars">❚❚</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Personnel Cards Grid (Name, Badge, Station, Rank, Discord - No descriptions, Ready for custom avatars) -->
+      <div class="roster-grid" style="margin-top: 48px;">
+
+        <!-- 1. Jack Johnson (Chief of Police) -->
+        <article class="command-card rank-chief" data-category="High Command">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="stars-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rank-badge-text">HIGH COMMAND</span>
+            </div>
+            
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1001_jack_johnson.jpg" 
+                   data-alt-src="avatars/1001.jpg" 
+                   alt="Jack Johnson" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1001</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Chief of Police</span>
+              </div>
+              <h3 class="officer-name">Jack Johnson</h3>
+              
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1001 <small>(Staff-1)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Chief of Police</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="_zoney_" title="Klikněte pro zkopírování">
+                    _zoney_ <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Frank Callahan (Assistant Chief) -->
+        <article class="command-card" data-category="High Command">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="stars-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rank-badge-text">HIGH COMMAND</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1002_frank_callahan.jpg" 
+                   data-alt-src="avatars/1002.jpg" 
+                   alt="Frank Callahan" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1002</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-star"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Assistant Chief of Police</span>
+              </div>
+              <h3 class="officer-name">Frank Callahan</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1002 <small>(Staff-2)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Assistant Chief</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="xerisek" title="Klikněte pro zkopírování">
+                    xerisek <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Marcus Stanley (Deputy Chief) -->
+        <article class="command-card" data-category="High Command">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="stars-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rank-badge-text">HIGH COMMAND</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1003_marcus_stanley.jpg" 
+                   data-alt-src="avatars/1003.jpg" 
+                   alt="Marcus Stanley" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1003</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-star"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Deputy Chief of Police</span>
+              </div>
+              <h3 class="officer-name">Marcus Stanley</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1003 <small>(Staff-3)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Deputy Chief</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="cernypaannn" title="Klikněte pro zkopírování">
+                    cernypaannn <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Leon Viper (Commander) -->
+        <article class="command-card" data-category="High Command">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="stars-row">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rank-badge-text">HIGH COMMAND</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1006_leon_viper.jpg" 
+                   data-alt-src="avatars/1006.jpg" 
+                   alt="Leon Viper" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1006</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-award"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Commander</span>
+              </div>
+              <h3 class="officer-name">Leon Viper</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1006 <small>(Mike-1)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Commander</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="zyxyk1" title="Klikněte pro zkopírování">
+                    zyxyk1 <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Nora-1 (Captain - Neobsazeno) -->
+        <article class="command-card" data-category="Command Staff">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="bars-row">
+                <span class="rank-bar"></span>
+                <span class="rank-bar"></span>
+              </div>
+              <span class="rank-badge-text">COMMAND STAFF</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1007_nora_1.jpg" 
+                   data-alt-src="avatars/1007.jpg" 
+                   alt="Nora-1" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-clock"></i>
+                <span class="placeholder-badge">#1007</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Captain</span>
+              </div>
+              <h3 class="officer-name" style="color: var(--text-muted); font-style: italic;">Neobsazeno / Volné</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1007 <small>(Nora-1)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Captain</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <span class="info-value" style="color: var(--text-muted);">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Oliver Torres (Captain) -->
+        <article class="command-card" data-category="Command Staff">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="bars-row">
+                <span class="rank-bar"></span>
+                <span class="rank-bar"></span>
+              </div>
+              <span class="rank-badge-text">COMMAND STAFF</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1008_oliver_torres.jpg" 
+                   data-alt-src="avatars/1008.jpg" 
+                   alt="Oliver Torres" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1008</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Captain</span>
+              </div>
+              <h3 class="officer-name">Oliver Torres</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1008 <small>(Nora-2)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Captain</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="Kylenkoo076" title="Klikněte pro zkopírování">
+                    Kylenkoo076 <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Alex Sanchez (Captain) -->
+        <article class="command-card" data-category="Command Staff">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="bars-row">
+                <span class="rank-bar"></span>
+                <span class="rank-bar"></span>
+              </div>
+              <span class="rank-badge-text">COMMAND STAFF</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1009_alex_sanchez.jpg" 
+                   data-alt-src="avatars/1009.jpg" 
+                   alt="Alex Sanchez" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1009</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Captain</span>
+              </div>
+              <h3 class="officer-name">Alex Sanchez</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1009 <small>(Nora-3)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Captain</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="masterofbitcoin" title="Klikněte pro zkopírování">
+                    masterofbitcoin <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Ann-Katherim Mercedes (Captain) -->
+        <article class="command-card" data-category="Command Staff">
+          <div class="command-card-inner">
+            <div class="rank-badge-ribbon">
+              <div class="bars-row">
+                <span class="rank-bar"></span>
+                <span class="rank-bar"></span>
+              </div>
+              <span class="rank-badge-text">COMMAND STAFF</span>
+            </div>
+
+            <div class="command-avatar-wrapper">
+              <img src="avatars/1010_ann_katherim_mercedes.jpg" 
+                   data-alt-src="avatars/1010.jpg" 
+                   alt="Ann-Katherim Mercedes" 
+                   class="command-avatar" />
+              <div class="command-avatar-placeholder">
+                <i class="fa-solid fa-user-shield"></i>
+                <span class="placeholder-badge">#1010</span>
+              </div>
+              <div class="badge-overlay-icon"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="command-details">
+              <div class="rank-title-group">
+                <span class="rank-name">Captain</span>
+              </div>
+              <h3 class="officer-name">Ann-Katherim Mercedes</h3>
+
+              <div class="command-info-list">
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-id-badge"></i> Číslo odznaku:</span>
+                  <span class="info-value badge-highlight">#1010 <small>(Nora-4)</small></span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Hodnost:</span>
+                  <span class="info-value">Captain</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-solid fa-building-shield"></i> Stanice:</span>
+                  <span class="info-value">Little Seoul Police Station</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="fa-brands fa-discord"></i> Discord:</span>
+                  <button class="discord-tag-pill small" data-discord="daniiikkk" title="Klikněte pro zkopírování">
+                    daniiikkk <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PODAT STÍŽNOST (DIRECT TO GOOGLE FORMS) ================= -->
+  <section class="section complaints-section" id="complaints">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag warning">
+          <i class="fa-solid fa-file-pen"></i> HLÁŠENÍ & STÍŽNOSTI
+        </div>
+        <h2 class="section-title">Podat stížnost na policistu</h2>
+        <div class="gold-divider"><span></span><i class="fa-solid fa-shield-halved"></i><span></span></div>
+        <p class="section-subtitle">
+          Oficiální formulář pro nahlášení pochybení, nevhodného chování nebo porušení předpisů ze strany příslušníka LSPD.
+        </p>
+      </div>
+
+      <div class="complaint-direct-card">
+        <div class="direct-card-inner">
+          <div class="direct-badge-icon">
+            <img src="lspd_logo.png" alt="LSPD Emblem" class="direct-logo-img" />
+          </div>
+          
+          <div class="direct-badge-meta">
+            <span class="direct-badge-tag"><i class="fa-solid fa-lock"></i> OFICIÁLNÍ FORMULÁŘ</span>
+            <h3>Podání stížnosti prostřednictvím Google Forms</h3>
+            <p>
+              Pro podání stížnosti na officera LSPD využijte oficiální Google formulář. Formulář obsahuje veškeré požadované náležitosti včetně popisu incidentu, identifikace dotčeného officera a doložení důkazních materiálů.
+            </p>
+          </div>
+
+          <div class="direct-action-box">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdcNDCBLHxIllWC0Msst7ZGjhjYj9lNAESX-XQOZFcXp7wEcQ/viewform?usp=dialog" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-direct-forms"
+            >
+              <span class="btn-bg-glow"></span>
+              <span class="btn-content">
+                <i class="fa-solid fa-file-signature send-icon"></i>
+                <span class="btn-text">Otevřít formulář pro podání stížnosti</span>
+                <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+              </span>
+            </a>
+            <small class="direct-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i> Odkaz se otevře v novém okně v zabezpečeném prostředí Google Forms.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-row">
+            <div class="footer-badge-icon">
+              <img src="lspd_logo.png" alt="LSPD" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;" />
+            </div>
+            <div>
+              <h4 class="footer-brand-title">LSPD</h4>
+              <span class="footer-brand-sub">LOS SANTOS POLICE DEPARTMENT</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Věrně sloužíme občanům Los Santos. Naším posláním je chránit životy, majetek a práva všech obyvatel s respektem, profesionalitou a ctí.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-btn" title="Police Radio"><i class="fa-solid fa-walkie-talkie"></i></a>
+            <a href="#" class="social-btn" title="LSPD Dispatch"><i class="fa-solid fa-tower-broadcast"></i></a>
+            <a href="#" class="social-btn" title="Twitter / Lifeinvader"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" title="YouTube Public Reports"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="footer-heading">Rychlá navigace</h5>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Hlavní stránka</a></li>
+            <li><a href="#legislation"><i class="fa-solid fa-chevron-right"></i> Zákony & Legislativa</a></li>
+            <li><a href="#high-command"><i class="fa-solid fa-chevron-right"></i> Vedení sboru (High Command)</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdcNDCBLHxIllWC0Msst7ZGjhjYj9lNAESX-XQOZFcXp7wEcQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-chevron-right"></i> Podat stížnost (Google Forms)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="footer-heading">Zákonné kodexy</h5>
+          <ul class="footer-links">
+            <li><a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=PEN" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-scale-balanced"></i> Trestní státní zákoník</a></li>
+            <li><a href="https://onedrive.live.com/:w:/g/personal/548C6C1452612027/IQApjAG7heNmT5pThr2XcgrWAW8kDaYAFp9yNpXZVXPkwJc?resid=548C6C1452612027!sbb018c29e3854f669a5386bd97720ad6&ithint=file%2Cdocx&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy81NDhjNmMxNDUyNjEyMDI3L0lRQXBqQUc3aGVObVQ1cFRocjJYY2dyV0FXOGtEYVlBRnA5eU5wWFpWWFBrd0pj" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-word"></i> Federální zákoník</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="footer-heading">Centrální velitelství</h5>
+          <div class="footer-contact-info">
+            <p><i class="fa-solid fa-location-dot"></i> Little Seoul Police Station, Palomino Ave / Calais Ave, Los Santos, SA</p>
+            <p><i class="fa-solid fa-phone-volume"></i> Dispečink (LSPD): +1 (555) 010-000</p>
+            <p><i class="fa-solid fa-clock"></i> Nepřetržitý provoz: 24/7/365</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Los Santos Police Department. Všechna práva vyhrazena.
+        </p>
+        <p class="roleplay-disclaimer">
+          Upozornění: Tato webová prezentace slouží výhradně pro fiktivní roleplay komunitu LSPD (Los Santos Police Department). V reálné nouzi vždy volejte záchranné složky Vaší země (158 / 112 / 911).
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Zpět nahoru">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
